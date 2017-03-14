@@ -1,0 +1,33 @@
+.solid-border {
+  border: 1px solid; }
+
+.border-10 {
+  border-radius: 10px; }
+
+.wizard .title {
+  color: #286090;
+  font-size: 28px;
+  padding: 8px; }
+.wizard hr {
+  padding: 0 0 40px;
+  margin: 0;
+  color: black; }
+.wizard .line {
+  height: 10px;
+  background-color: green;
+  margin-top: 16px;
+  margin-right: -2px;
+  margin-left: -2px; }
+.wizard .round-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  line-height: 25px;
+  display: inline-block; }
+.wizard md-content.md-default-theme, .wizard md-content {
+  color: rgba(0, 0, 0, 0.87);
+  background-color: transparent; }
+.wizard .row {
+  text-align: left; }
+
+/*# sourceMappingURL=style.css.map */

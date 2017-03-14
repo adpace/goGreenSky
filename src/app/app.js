@@ -6,6 +6,7 @@ angular.module('gsApp', [
   'ngMessages',
   'ngAnimate',
   'ngMaterial',
+  'ui.bootstrap',
   'gsApp.view1',
   'gsApp.view2',
   'gsApp.version'

@@ -4,25 +4,27 @@ angular.module('gsApp.view2', ['ngRoute'])
 
     .config(['$routeProvider', function($routeProvider) {
         $routeProvider.when('/view2', {
-            templateUrl: 'view2/view2.html',
-            controller : 'View2Ctrl'
+            templateUrl : 'view2/view2.html',
+            controller  : 'View2Ctrl',
+            controllerAs: '$ctrl'
         });
     }])
 
-    .controller('View2Ctrl', [function() {
+    .controller('View2Ctrl', [function($scope, $mdDialog) {
 
         var ctrl = this;
 
-        ctrl.title = "";
+        var contract = {};
 
         ctrl.contract = {
-            title               : contract.title,
+            title               : "Enter Contract Information",
             effectiveDate       : contract.effectiveDate,
             shipperName         : contract.shipperName,
             term                : contract.term,
             acres               : contract.acres,
             acresAdjustment     : contract.acresAdjustment,
             cropType            : contract.cropType,
+            variety             : contract.variety,
             growingSeason       : contract.growingSeason,
             harvesterName       : contract.harvesterName,
             coolerName          : contract.coolerName,
@@ -31,7 +33,7 @@ angular.module('gsApp.view2', ['ngRoute'])
             contractUpload      : contract.contractUpload,
             validated           : contract.validated,
             pending             : contract.pending
-    }
+        }
 
 
     }
